@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">22_bca_0096_s_application2</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+<string name="lbl_91_8146151621">+91 8146151621</string>
+  <string name="lbl_about_the_app">About the App</string>
+  <string name="lbl_setting">Setting</string>
+  <string name="msg_change_your_relative_s">Change your Relative\u2019s Number </string>
+  <string name="lbl_thank_you">Thank You</string>
+  <string name="msg_illuminate_your">Illuminate Your Connections</string>
+  <string name="msg_hi_there_here_is">Hi, there
+Here is your QR Code</string>
+  <string name="msg_enter_your_relative_s">Enter your Relative\u2019s Number</string>
+  <string name="lbl_generate_qr">Generate QR</string>
+  <string name="lbl_91_70173949367">+91 70173949367</string>
+  <string name="msg_change_your_name">Change your Name </string>
+  <string name="msg_change_your_information">Change your Information</string>
+  <string name="lbl_let_s_start">Let\u2019s Start</string>
+  <string name="msg_welcome_to_find">Welcome to Find My Folks 
+Stay Connected with your loved one effortlessly. </string>
+  <string name="msg_change_your_phone">Change your Phone Number </string>
+  <string name="msg_enter_your_phone">Enter your Phone Number</string>
+  <string name="lbl_download_qr">Download QR</string>
+  <string name="lbl_sachin_panwar">Sachin Panwar</string>
+  <string name="lbl_give_feedback">Give Feedback</string>
+  <string name="lbl_save">Save</string>
+  <string name="lbl_enter_your_name">Enter your Name</string>
+  <string name="lbl_find_my_folks">Find My Folks</string>
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="androidLargeOneVM" type="com.bcasapplication.app.modules.androidlargeone.data.viewmodel.AndroidLargeOneVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearAndroidLarge"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_8pxv"
+        android:paddingEnd="@dimen/_24pxh"
+        android:paddingStart="@dimen/_24pxh"
+        android:paddingTop="@dimen/_8pxv" style="@style/groupStylelight_green_50">
+        <ImageView android:id="@+id/imageLinkedinOne"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_50pxh"
+            android:layout_marginTop="@dimen/_74pxv"
+            android:layout_width="@dimen/_40pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_linkedin"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_linkedin"/>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtFindmyfolks"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3pxv"
+            android:layout_width="match_parent"
+            android:letterSpacing="0.05" android:singleLine="true"
+            android:text="@{androidLargeOneVM.androidLargeOneModel.txtFindmyfolks}"
+            style="@style/txtMavenProbold36" tools:text="@string/lbl_find_my_folks"/>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtIlluminateyour"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:letterSpacing="0.08" android:singleLine="true"
+            android:text="@{androidLargeOneVM.androidLargeOneModel.txtIlluminateyour}"
+            style="@style/txtHindMysurubold14" tools:text="@string/msg_illuminate_your"/>
+        <ImageView android:id="@+id/imageImage"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_234pxh"
+            android:layout_marginTop="@dimen/_48pxv"
+            android:layout_width="@dimen/_262pxh"
+            android:scaleType="fitXY" android:src="@drawable/img_group"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_group"/>
+        <View android:id="@+id/viewView"
+            android:layout_height="@dimen/_135pxv" android:layout_width="@dimen/_297pxh"/>
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtDescription"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_6pxh"
+            android:layout_marginStart="@dimen/_7pxh"
+            android:layout_width="match_parent"
+            android:letterSpacing="0.01"
+            android:text="@{androidLargeOneVM.androidLargeOneModel.txtDescription}"
+            style="@style/txtHindMysurubold13" tools:text="@string/msg_welcome_to_find"/>
+        <EditText
+            android:background="@drawable/rectangle_bg_gray_50_radius_15"
+            android:drawableEnd="@drawable/img_solarmaparrowrightboldduotone"
+            android:drawablePadding="@dimen/_30pxh"
+            android:ellipsize="end"
+            android:hint="@string/lbl_let_s_start"
+            android:id="@+id/etActionOne" android:inputType="text"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_35pxv"
+            android:layout_width="match_parent"
+            android:letterSpacing="0.01"
+            android:paddingBottom="@dimen/_8pxv"
+            android:paddingEnd="@dimen/_19pxh"
+            android:paddingStart="@dimen/_15pxh"
+            android:paddingTop="@dimen/_8pxv" android:singleLine="true"
+            android:text="@={androidLargeOneVM.androidLargeOneModel.etActionOneValue}"
+            android:textColorHint="@color/gray_900"
+            style="@style/etSolidRounded" tools:ignore="Autofill"/>
+        <View
+            android:background="@drawable/rectangle_bg_black_900_radius_2"
+            android:id="@+id/lineLine"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_4pxv"
+            android:layout_marginTop="@dimen/_49pxv" android:layout_width="@dimen/_108pxh"/>
+    </LinearLayout>
+</layout>
