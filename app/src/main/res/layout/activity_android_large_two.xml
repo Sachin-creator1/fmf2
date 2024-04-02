@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="androidLargeTwoVM" type="com.bcasapplication.app.modules.androidlargetwo.data.viewmodel.AndroidLargeTwoVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearAndroidLarge"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_8pxv"
+        android:paddingEnd="@dimen/_16pxh"
+        android:paddingStart="@dimen/_16pxh"
+        android:paddingTop="@dimen/_8pxv" style="@style/groupStylelight_green_50">
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtFindmyfolks"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_61pxv"
+            android:layout_width="match_parent"
+            android:letterSpacing="0.05" android:singleLine="true"
+            android:text="@{androidLargeTwoVM.androidLargeTwoModel.txtFindmyfolks}"
+            style="@style/txtMavenProbold35" tools:text="@string/lbl_find_my_folks"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnenteryour"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_38pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtEnteryourname"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_3pxh"
+                android:layout_width="wrap_content"
+                android:letterSpacing="0.02" android:singleLine="true"
+                android:text="@{androidLargeTwoVM.androidLargeTwoModel.txtEnteryourname}"
+                style="@style/txtHindMysurubold16" tools:text="@string/lbl_enter_your_name"/>
+            <EditText
+                android:background="@drawable/rectangle_bg_gray_50_border_gray_900_radius_8"
+                android:ellipsize="end" android:id="@+id/etEdittext"
+                android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@={androidLargeTwoVM.androidLargeTwoModel.etEdittextValue}"
+                style="@style/etSolidRoundedOutline" tools:ignore="Autofill"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnenteryour1"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_22pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtEnteryour"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_3pxh"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.02" android:singleLine="true"
+                android:text="@{androidLargeTwoVM.androidLargeTwoModel.txtEnteryour}"
+                style="@style/txtHindMysurubold16" tools:text="@string/msg_enter_your_phone"/>
+            <EditText
+                android:background="@drawable/rectangle_bg_gray_50_border_gray_900_radius_8"
+                android:ellipsize="end" android:id="@+id/etEdittextOne"
+                android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@={androidLargeTwoVM.androidLargeTwoModel.etEdittextOneValue}"
+                style="@style/etSolidRoundedOutline" tools:ignore="Autofill"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnenteryour2"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_22pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtEnteryourOne"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_3pxh"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.02" android:singleLine="true"
+                android:text="@{androidLargeTwoVM.androidLargeTwoModel.txtEnteryourOne}"
+                style="@style/txtHindMysurubold16" tools:text="@string/msg_enter_your_relative_s"/>
+            <EditText
+                android:background="@drawable/rectangle_bg_gray_50_border_gray_900_radius_8"
+                android:ellipsize="end" android:id="@+id/etEdittextTwo"
+                android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@={androidLargeTwoVM.androidLargeTwoModel.etEdittextTwoValue}"
+                style="@style/etSolidRoundedOutline" tools:ignore="Autofill"/>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnGenerateQr"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_40pxv"
+            android:layout_marginTop="@dimen/_50pxv"
+            android:layout_width="@dimen/_130pxh"
+            android:letterSpacing="0.02"
+            android:paddingBottom="@dimen/_6pxv"
+            android:paddingEnd="@dimen/_16pxh"
+            android:paddingStart="@dimen/_16pxh"
+            android:paddingTop="@dimen/_6pxv" android:singleLine="true"
+            android:text="@string/lbl_generate_qr"
+            android:textAllCaps="false"
+            style="@style/btnSolidRoundedOutline" tools:text="@string/lbl_generate_qr"/>
+        <View android:id="@+id/viewView"
+            android:layout_height="@dimen/_313pxh" android:layout_width="@dimen/_108pxh"/>
+        <View
+            android:background="@drawable/rectangle_bg_black_900_radius_2"
+            android:id="@+id/lineLine"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_4pxv" android:layout_width="@dimen/_108pxh"/>
+    </LinearLayout>
+</layout>
